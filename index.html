@@ -7,40 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-            background-color: #1C1720;
-            color: #FFF;
-            padding: 1% 0;
-            font-size: 1.2em;
-            border: 0;
-        }
-        .navbar-brand {
-            float: left;
-            min-height: 55px;
-            padding: 0 15px 5px;
-        }
-        .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
-            color: #FFF;
-            background-color: #1C1720;
-        }
-        .navbar-inverse .navbar-nav li a {
-            /* color: #D5D5D5; */
-        }
-        .fbtn {
-            /* background-color: rgb(0, 30, 100); */
-            color: #FFF;
-
-        }
-        
-    </style>
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -49,17 +22,207 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- LOGO -->
-                <a class="navbar-brand" href="#"><img src="#"></a>
+                <!-- <a class="navbar-brand" href="#"><img src="#"></a> -->
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Instructions</a></li>
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active">
+                        <a class="link" href="#">
+                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home
+                        </a>
+                    </li>
+                    <li><a class="link" href="#overview">Overview</a></li>
+                    <li><a class="link" href="#team">Team</a></li>
+                    <li><a class="link" href="#setup">Setup</a></li>
+                    <li><a class="link" href="#myCarousel">Screenshots</a></li>
                     <li><button type="button" class="btn btn-primary fbtn">Forum</button></li>
                 </ul>
+                <!-- <ul class="nav navbar-nav navbar-right">
+                    <li><button type="button" class="btn btn-primary fbtn">Forum</button></li>
+                </ul> -->
             </div>
         </div>
     </nav>
+
+    <!-- Screen Slide Show Section -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+                <!-- <h1 class="team_caption">Get to Know The Team</h1> -->
+            <div class="item active">
+                <img src="img/placeholder.png" alt="">
+                <!-- <div class="carousel-caption">
+                    <h1>Placeholder for Screenshots</h1>
+                    <br>
+                    <button type="button" class="btn btn-default">Get Started</button>
+                </div> -->
+            </div> <!-- End Active -->
+            <div class="item"> <!-- 2nd image in slider -->
+                <img src="img/placeholder.png" alt="">
+            </div>
+            <div class="item"> <!-- 3rd image in slider -->
+                <img src="img/placeholder.png" alt="">
+            </div>
+            <!-- Slider Controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div> <!-- End Screenshot Section -->
+
+    <!-- Project Overview Section -->
+    <div class="container text-center">
+        <h2 id="overview" class="container_heading">Project Overview</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Architecto esse recusandae impedit delectus! Alias vel assumenda 
+            reiciendis aliquam dolores quas dolorum molestiae consequatur quod. 
+            Sit illum voluptatem vel quas corrupti!Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Architecto esse recusandae impedit delectus! Alias vel assumenda 
+            reiciendis aliquam dolores quas dolorum molestiae consequatur quod. 
+            Sit illum voluptatem vel quas corrupti!Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Architecto esse recusandae impedit delectus! Alias vel assumenda 
+            reiciendis aliquam dolores quas dolorum molestiae consequatur quod. 
+            Sit illum voluptatem vel quas corrupti!</p>
+    </div> <!-- End Overview Section -->
+
+    <!-- Team Section -->
+    <div class="container text-center">
+        <h2 id="team" class="container_heading">The Team</h2>
+        <div class="row">
+            <div class="col-sm-3">
+                <img id="icon" src="img/dodo.jpg" alt="">
+                <h4>Scott D</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto esse recusandae impedit delectus! Alias vel assumenda 
+                    reiciendis aliquam dolores quas dolorum molestiae consequatur quod. 
+                    Sit illum voluptatem vel quas corrupti!</p>
+            </div>
+            <div class="col-sm-3">
+                <img id="icon" src="img/glowpet.jpg" alt="">
+                <h4>John J</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto esse recusandae impedit delectus! Alias vel assumenda 
+                    reiciendis aliquam dolores quas dolorum molestiae consequatur quod. 
+                    Sit illum voluptatem vel quas corrupti!</p>
+            </div>
+            <div class="col-sm-3">
+                <img id="icon" src="img/dodo.jpg" alt="">
+                <h4>Scott B</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto esse recusandae impedit delectus! Alias vel assumenda 
+                    reiciendis aliquam dolores quas dolorum molestiae consequatur quod. 
+                    Sit illum voluptatem vel quas corrupti!</p>
+            </div>
+            <div class="col-sm-3">
+                <img id="icon" src="img/glowpet.jpg" alt="">
+                <h4>John Y</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto esse recusandae impedit delectus! Alias vel assumenda 
+                    reiciendis aliquam dolores quas dolorum molestiae consequatur quod. 
+                    Sit illum voluptatem vel quas corrupti!</p>
+            </div>
+        </div>
+    </div> <!-- End Team Section -->
+
+    <!-- Setup Section -->
+    <div class="container">
+        <div class="row">
+            <h2 id="setup" class="container_heading text-center">Setup Instructions</h4>
+            <div class="col-md-6">
+                <ol>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Architecto esse recusandae impedit delectus! Alias vel assumenda 
+                        reiciendis aliquam dolores quas dolorum molestiae consequatur quod. 
+                        Sit illum voluptatem vel quas corrupti!</li>
+                    <br>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Architecto esse recusandae impedit delectus! Alias vel assumenda 
+                        reiciendis aliquam dolores quas dolorum molestiae consequatur quod. 
+                        Sit illum voluptatem vel quas corrupti!</li>
+                </ol>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="img/ad_logo.png" alt="">
+            </div>
+        </div>
+    </div> <!-- End Setup Section -->
+
+    <div class="container">
+        <div class="row">
+            <h4><a href="#hidden" data-toggle="collapse">Learn more?</a></h4>
+            <div id="hidden" class="collapse">
+                <h4>Fun stuff Here</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto esse recusandae impedit delectus! Alias vel assumenda 
+                    reiciendis aliquam dolores quas dolorum molestiae consequatur quod. 
+                    Sit illum voluptatem vel quas corrupti!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto esse recusandae impedit delectus! Alias vel assumenda 
+                    reiciendis aliquam dolores quas dolorum molestiae consequatur quod. 
+                    Sit illum voluptatem vel quas corrupti!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Contact Us</h3>
+                <br>
+                <h4>ou-ark@nonayobusiness.com</h4>
+            </div>
+            <div class="col-sm-4">
+                <h3>Connect</h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+            <div class="col-sm-4">
+                <!-- <img class="img-responsive ou_icon" src="img/ou_icon.jpg" alt=""> -->
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Script for smooth scrolling to page sections
+        $(document).ready(function(){
+          // Add smooth scrolling to links only in navbar
+          $("a:not(.carousel-control)").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+              var navOffset = 130;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top - navOffset
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash - navOffset;
+              });
+            } // End if
+          });
+        });
+    </script>
 </body>
 </html>
